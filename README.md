@@ -17,6 +17,8 @@ If you want to train yolov8 with the same dataset I use in the video, this is wh
 4. Execute **create_image_list_file.py**.
 5. Execute **downloader.py**.
 
-       python downloader.py $IMAGE_LIST_FILE --download_folder=$DOWNLOAD_FOLDER
+```sh
+python downloader.py $IMAGE_LIST_FILE --download_folder=$DOWNLOAD_FOLDER
+```
 
 6. Execute **create_dataset_yolo_format.py**, changing **DATA_ALL_DIR** by **$DOWNLOAD_FOLDER**.
