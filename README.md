@@ -30,3 +30,22 @@ python downloader.py $IMAGE_LIST_FILE --download_folder=$DOWNLOAD_FOLDER
 ```
 
 6. Execute **create_dataset_yolo_format.py**, changing **DATA_ALL_DIR** by **$DOWNLOAD_FOLDER**.
+
+# Problem log
+
+## Model is not being trained with a loss of 'nan'
+
+The issue is [discussed here](https://github.com/ultralytics/ultralytics/issues/280). The problem is with the compatibility of the GPU. You may have a problem or may not. 
+
+To solve it set the `amp=False` option in the training of the model:
+
+```python
+results = model.train(
+    data="config.yaml",
+    epochs=1,
+    amp=False,
+)  # train the model
+```
+
+However, you could try it without it to see if you have compatible CPU!
+
