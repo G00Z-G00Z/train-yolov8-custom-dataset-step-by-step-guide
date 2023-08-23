@@ -1,5 +1,5 @@
 
-path: '/content/gdrive/MyDrive/../Shareddrives/PEF OT23/Documentación/Ejemplo de YOLO/training-format/' # dataset root dir
+path: /content/gdrive/Shareddrives/PEF OT23/Documentación/Ejemplo de YOLO/training-format/ # dataset root dir
 train: images/train  # train images (relative to 'path')
 val: images/train  # val images (relative to 'path')
 
