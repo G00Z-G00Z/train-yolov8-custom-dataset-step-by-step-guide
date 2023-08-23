@@ -24,3 +24,10 @@ The structure of the path must be the following:
             - ...
 
 Additionally, this must be following the YOLO format
+
+# Training results
+
+It takes approx 15 min to run 100 epochs
+
+Training results for batch 25 where much better
+Training results for batch 27 much better and trained over 25
