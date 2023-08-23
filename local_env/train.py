@@ -4,4 +4,8 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.yaml")  # build a new model from scratch
 
 # Use the model
-results = model.train(data="config.yaml", epochs=2)  # train the model
+results = model.train(
+    data="config.yaml",
+    epochs=1,
+    amp=False,
+)  # train the model
