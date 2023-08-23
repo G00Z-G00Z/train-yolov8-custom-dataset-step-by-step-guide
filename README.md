@@ -7,6 +7,14 @@
 </a>
 </p>
 
+## Setup 
+
+Install the dependecies
+
+```sh
+pip install -r ./requirements.txt
+```
+
 ## dataset
 
 If you want to train yolov8 with the same dataset I use in the video, this is what you should do:
