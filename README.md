@@ -49,3 +49,8 @@ results = model.train(
 
 However, you could try it without it to see if you have compatible CPU!
 
+## Google collab is not reading the data
+
+Maybe google drive is changing the .txt format into a .doc format. It does this
+automatically, unless you deselect the options in settings
+
