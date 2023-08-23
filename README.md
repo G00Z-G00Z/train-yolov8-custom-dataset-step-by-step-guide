@@ -54,3 +54,19 @@ However, you could try it without it to see if you have compatible CPU!
 Maybe google drive is changing the .txt format into a .doc format. It does this
 automatically, unless you deselect the options in settings
 
+## Google collab not copying the files in my drive unit
+
+### UTF-8 not selected
+
+It is a weird misktake, but the workaround is [found here](https://stackoverflow.com/questions/56081324/why-are-google-colab-shell-commands-not-working): 
+
+Add this to your last cell: 
+
+```python
+import locale
+def getpreferredencoding(do_setlocale = True):
+    return "UTF-8"
+locale.getpreferredencoding = getpreferredencoding
+
+!scp -r /content/runs ROOT_PATH
+```
