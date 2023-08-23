@@ -11,3 +11,5 @@ yolo_format/*
 !yolo_format/train
 yolo_format/train/*
 !yolo_format/train/.gitkeep
+
+local_env/.env
