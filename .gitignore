@@ -4,5 +4,10 @@ oidv6-train-annotations-bbox.csv
 test-annotations-bbox.csv
 validation-annotations-bbox.csv
 image_list_file
-dataset
-yolo_format
+dataset/*
+!dataset/.gitkeep
+yolo_format/*
+!yolo_format/.gitkeep
+!yolo_format/train
+yolo_format/train/*
+!yolo_format/train/.gitkeep
